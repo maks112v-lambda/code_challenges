@@ -13,6 +13,9 @@
 // Characters in words will be upper or lower case.
 // "y" is not considered a vowel.
 
+const firstVowel = word => {
+  return word.search(/[aeiou]/i)
+}
 
 console.log(firstVowel("apple"))
 
