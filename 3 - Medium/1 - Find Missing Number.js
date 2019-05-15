@@ -11,8 +11,8 @@
 // Only one number will be missing.
 
 const missingNum = arr => {
-  let addedArr = arr.reduce((total, current) => total + current);
-
+  let added = arr.reduce((total, current) => total + current);
+  return 55 - added
 };
 
 console.log(missingNum([1, 2, 3, 4, 6, 7, 8, 9, 10]));
