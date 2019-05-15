@@ -9,6 +9,8 @@
 // Notes
 // The first character should always be UPPERCASE.
 
+const alternatingCaps = str => str.split('').map((char,index) => index % 2 === 0 ? char.toUpperCase() : char.toLowerCase()).join('')
+
 console.log(alternatingCaps("Hello"))
 
 console.log(alternatingCaps("Hey, how are you?"))
