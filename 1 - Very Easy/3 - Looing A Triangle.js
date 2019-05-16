@@ -9,7 +9,7 @@
 // #######
 
 const makeTriangle = (width, item) => {
-  for(let i =1; i < width; i++){
+  for(let i =1; i < width + 1; i++){
     console.log(item.repeat(i))
   }
 }

@@ -28,15 +28,6 @@
 // Notes
 // Note: For this question, output an array, not a set. These are two distinctly different data structures in Javascript (although they can be converted from one to the other).
 
-
-
-console.log(set([1, 3, 3, 5, 5]))
-
-console.log(set([4, 4, 4, 4]))
-
-console.log(set([5, 7, 8, 9, 10, 15]))words will be upper or lower case.
-// "y" is not considered a vowel.
-
 const firstVowel = word => {
   return word.search(/[aeiou]/i)
 }
