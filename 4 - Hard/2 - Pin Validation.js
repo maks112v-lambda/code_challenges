@@ -15,14 +15,14 @@
 
 // validatePIN("8409") ➞ {valid: true, security: 4 }
 
-// validatePIN("2222") ➞ {valid: true, 1 }
+// validatePIN("2222") ➞ {valid: true, security: 1 }
 
-// validatePIN("2727") ➞ {valid: true, 3 }
+// validatePIN("2727") ➞ {valid: true, security: 3 }
 
-// validatePIN("2227") ➞ {valid: true, 2 }
+// validatePIN("2227") ➞ {valid: true, security: 2 }
 
 // Challenge Part 2
-// Check pin number security level
+//Create a call back function to check the security level of the pen
 // Score is between 1 - 4
 
 // Rules
@@ -31,10 +31,10 @@
 
 // 2. If the same number repeats then take that of off 4( if 0 repeats then subtract 1)
 // Examples:
-// 8888 ➞ 3 repeats ➞ 5 - 4 = 1
+// 8888 ➞ 4 repeats ➞ 5 - 4 = 1
 // 8788 ➞ 3 repeats ➞ 5 - 3 = 2
 // 9298 ➞ 2 repeats ➞ 5 - 2 = 3
-// 3892 ➞ 0 repeats ➞ 5 - 1 = 5
+// 3892 ➞ 0 repeats ➞ 5 - 1 = 4
 
 const securityCheck = pin => {
   let count = {};
